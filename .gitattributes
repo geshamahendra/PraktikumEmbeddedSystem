@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+$ cat .gitattributes
+special-vendored-path/* linguist-vendored
+compile.p linguist-documentation=false
+compile.p linguist-vendored=false
+*.p linguist-detectable=false
