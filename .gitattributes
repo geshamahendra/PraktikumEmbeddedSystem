@@ -2,4 +2,6 @@ $ cat .gitattributes
 special-vendored-path/* linguist-vendored
 compile.p linguist-documentation=false
 compile.p linguist-vendored=false
+.pl linguist-vendored=false
+.PL linguist-vendored=false
 *.p linguist-detectable=false
