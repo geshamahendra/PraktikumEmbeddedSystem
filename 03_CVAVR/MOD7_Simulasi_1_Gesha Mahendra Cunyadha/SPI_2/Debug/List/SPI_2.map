@@ -1,0 +1,209 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+text                                                                              0x0500      16
+tegangan                                                                          0x0510       4
+_base_y                                                                           0x0514       4
+_seed                                                                             0x0518       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+data                                                                              R4,R5        2
+MCP4921_Command                                                                   R7           1
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DACMCP4921                                                                   0x0009E     33
+ext_int0_isr                                                                      0x000BF      7
+ext_int1_isr                                                                      0x000C6     12
+main                                                                              0x000D2     97
+put_buff_G100                                                                     0x00133     58
+_ftoe_G100                                                                        0x0016D    210
+_print_G100                                                                       0x0023F    538
+sprintf                                                                           0x00459     52
+_lcd_write_nibble_G101                                                            0x0048D     20
+_lcd_write_data                                                                   0x004A1     12
+lcd_gotoxy                                                                        0x004AD     13
+lcd_clear                                                                         0x004BA     12
+lcd_putchar                                                                       0x004C6     21
+lcd_puts                                                                          0x004DB     15
+lcd_putsf                                                                         0x004EA     19
+lcd_init                                                                          0x004FD     45
+spi                                                                               0x0052A      8
+strcpyf                                                                           0x00532     13
+strlen                                                                            0x0053F     12
+strlenf                                                                           0x0054B     13
+ftrunc                                                                            0x00558     49
+floor                                                                             0x00589     23
+ftoa                                                                              0x005A0    161

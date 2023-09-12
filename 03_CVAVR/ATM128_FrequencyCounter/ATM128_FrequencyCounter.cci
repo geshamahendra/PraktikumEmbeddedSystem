@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:536A5ABA
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega128.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\stdio.h"
+NODE:I LEVEL:0 LINE:28 "C:\cvavr\inc\alcd.h"
+NODE:V LEVEL:0 LINE:31 "start -> R2.0"
+NODE:V LEVEL:0 LINE:32 "iterasiCounter3 -> RAM:????"
+NODE:V LEVEL:0 LINE:32 "pulsa -> RAM:????"
+NODE:V LEVEL:0 LINE:33 "text -> RAM:????"
+NODE:F LEVEL:0 LINE:36 "ext_int0_isr(void)"
+NODE:F LEVEL:0 LINE:58 "timer1_compa_isr(void)"
+NODE:F LEVEL:0 LINE:78 "timer3_compa_isr(void)"
+NODE:F LEVEL:0 LINE:84 "main(void)"

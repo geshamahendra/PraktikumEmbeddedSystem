@@ -1,0 +1,99 @@
+/*******************************************************
+This program was created by the
+CodeWizardAVR V3.12 Advanced
+Automatic Program Generator
+� Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+Project : 
+Version : 
+Date    : 11/2/2021
+Author  : 
+Company : 
+Comments: 
+
+
+Chip type               : ATmega128
+Program type            : Application
+AVR Core Clock frequency: 10.000000 MHz
+Memory model            : Small
+External RAM size       : 0
+Data Stack size         : 1024
+*******************************************************/
+
+#include <mega128.h>
+#include <delay.h>
+
+// Declare your global variables here
+char nama_depan[255];
+char nama_belakang[255];
+char kelompok[255];
+char ipk[255];
+char email[255];
+
+// Standard Input/Output functions
+#include <stdio.h>
+
+void main(void)
+{
+// Declare your local variables here
+
+// USART0 initialization
+// Communication Parameters: 8 Data, 1 Stop, No Parity
+// USART0 Receiver: On
+// USART0 Transmitter: On
+// USART0 Mode: Asynchronous
+// USART0 Baud Rate: 9600
+UCSR0A=(0<<RXC0) | (0<<TXC0) | (0<<UDRE0) | (0<<FE0) | (0<<DOR0) | (0<<UPE0) | (0<<U2X0) | (0<<MPCM0);
+UCSR0B=(0<<RXCIE0) | (0<<TXCIE0) | (0<<UDRIE0) | (1<<RXEN0) | (1<<TXEN0) | (0<<UCSZ02) | (0<<RXB80) | (0<<TXB80);
+UCSR0C=(0<<UMSEL0) | (0<<UPM01) | (0<<UPM00) | (0<<USBS0) | (1<<UCSZ01) | (1<<UCSZ00) | (0<<UCPOL0);
+UBRR0H=0x00;
+UBRR0L=0x40;
+
+// USART1 initialization
+// USART1 disabled
+UCSR1B=(0<<RXCIE1) | (0<<TXCIE1) | (0<<UDRIE1) | (0<<RXEN1) | (0<<TXEN1) | (0<<UCSZ12) | (0<<RXB81) | (0<<TXB81);
+
+// Analog Comparator initialization
+// Analog Comparator: Off
+// The Analog Comparator's positive input is
+// connected to the AIN0 pin
+// The Analog Comparator's negative input is
+// connected to the AIN1 pin
+ACSR=(1<<ACD) | (0<<ACBG) | (0<<ACO) | (0<<ACI) | (0<<ACIE) | (0<<ACIC) | (0<<ACIS1) | (0<<ACIS0);
+SFIOR=(0<<ACME);
+
+while (1)
+      {
+      // Place your code here
+      printf("Masukkan nama depan anda : \r");
+      delay_ms(500);
+      scanf("%s", &nama_depan);
+      delay_ms(500);
+      printf("Masukkan nama belakang anda : \r");
+      delay_ms(500);
+      scanf("%s", &nama_belakang);
+      delay_ms(500);
+      printf("Masukkan nomor kelompok anda : \r");
+      delay_ms(500);
+      scanf("%s", &kelompok);
+      delay_ms(500);
+      printf("Masukkan IPK anda : \r");
+      delay_ms(500);
+      scanf("%s", &ipk);
+      delay_ms(500);
+      printf("Masukkan email anda : \r");
+      delay_ms(500);
+      scanf("%s", &email);
+      delay_ms(500);
+      printf("\r");
+      
+      printf("Data yang telah anda input: \r");
+      printf("Nama depan: %s \r", &nama_depan);
+      printf("Nama belakang: %s \r", &nama_belakang);
+      printf("Nomor kelompok: %s \r", &kelompok);
+      printf("IPK: %s \r", &ipk);
+      printf("Email: %s \r", &email);
+      printf("\r");
+      }
+}

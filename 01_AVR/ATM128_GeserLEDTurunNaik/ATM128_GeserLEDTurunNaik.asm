@@ -1,0 +1,50 @@
+
+			.INCLUDE<m128def.inc>
+			.ORG 0x0000
+			RJMP main
+
+			.ORG 0x0046
+main:		LDI R16, low(RAMEND)		; isi R16 dengan alamat low dari RAMEND
+			OUT SPL, R16				; simpan di SPL 
+			LDI R16, high(RAMEND)		; isi R16 dengan alamat high dari RAMEND
+			OUT SPH, R16				; simpan di SPL
+			LDI R16, 0x00				; 
+			OUT DDRD, R16				; definisikan PORTD sebagai input
+			LDI R16, 0xFF				; 
+			OUT PORTD, R16				; aktifkan pull-up di PORTD
+			OUT DDRE, R16				; definisikan PORTE sebagai output
+
+loop:		LDI R16, 0B11111110			;
+
+geser_kiri:	OUT PORTE, R16				; tampilkan di PORTE
+			RCALL delay					; panggil delay
+			SBIC PIND, 0				; skip satu instruksi dibawah ini jika PIND0=0
+			ROL R16						; rotate left with carry
+			CPI R16, 0B01111111			; bandingkan R16 dengan 01111111
+			BREQ geser_kanan			; Branch ke geser_kanan if carry 01111111
+			RJMP geser_kiri				; jika belum, ulang loncat ke geser_kiri
+geser_kanan:OUT PORTE, R16				; 
+			RCALL delay					;
+			SBIC PIND, 0				; skip satu instruksi dibawah ini jika PIND0=0
+			ROR R16						; rotate right
+			CPI R16, 0B11111110			; bandingkan R16 dengan 11111110
+			BREQ geser_kiri				; Branch ke geser_kanan if carry 11111110
+			RJMP geser_kanan			; jika belum, ulang loncat ke geser_k
+
+
+
+delay: 									; the subroutine: 
+			LDI R18, 18 				; load r18 with 8 
+
+outer_loop: 							; outer loop label 
+			LDI R24, low(3037) 
+			LDI R25, high(3037) 		; load registers r24:r25 with 3037, our new 
+										; init value 
+delay_loop: 
+			ADIW R24, 1 				; the loop label , "add immediate to word" 
+										; r24:r25 are incremented 
+			BRNE delay_loop 			; if no overflow ("branch if not equal"), go 
+										; back to "delay_loop" 
+ 			DEC R18 					; decrement r16 
+			BRNE outer_loop 			; and loop if outer loop not finished 
+			RET 						; return from subroutine

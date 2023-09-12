@@ -1,0 +1,58 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+move_right                                                                        0x0536       4
+move_left                                                                         0x053A       4
+value                                                                             0x053E       4
+step                                                                              0x0542       4
+text                                                                              0x0546      16
+temperature                                                                       0x0556       4
+data_dust                                                                         0x055A       2
+_base_y                                                                           0x055C       4
+_lcd_x                                                                            0x0560       1
+_lcd_y                                                                            0x0561       1
+_lcd_maxx                                                                         0x0562       1
+_seed                                                                             0x0563       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+start_bit                                                                         R2.0      1bit
+servo_ac                                                                          R4,R5        2
+servo_ap                                                                          R6,R7        2
+dust                                                                              R8,R9        2
+counter                                                                           R11          1
+i                                                                                 R10          1
+data_temp                                                                         R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+read_adc                                                                          0x000F1     38
+ext_int0_isr                                                                      0x00117     21
+ext_int1_isr                                                                      0x0012C      7
+timer1_compa_isr                                                                  0x00133     30
+main                                                                              0x00151    297
+put_buff_G100                                                                     0x0027A     58
+_ftoe_G100                                                                        0x002B4    210
+_print_G100                                                                       0x00386    538
+sprintf                                                                           0x005A0     52
+_lcd_write_nibble_G101                                                            0x005D4     20
+_lcd_write_data                                                                   0x005E8     12
+lcd_gotoxy                                                                        0x005F4     17
+lcd_clear                                                                         0x00605     14
+lcd_putchar                                                                       0x00613     32
+lcd_puts                                                                          0x00633     15
+lcd_putsf                                                                         0x00642     19
+lcd_init                                                                          0x00655     46
+spi                                                                               0x00683      8
+strcpyf                                                                           0x0068B     13
+strlen                                                                            0x00698     12
+strlenf                                                                           0x006A4     13
+ftrunc                                                                            0x006B1     49
+floor                                                                             0x006E2     23
+ftoa                                                                              0x006F9    161

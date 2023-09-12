@@ -1,0 +1,13 @@
+VERSION:3 SOURCE_TIMESTAMP:538E9EB2
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega128.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\stdio.h"
+NODE:I LEVEL:0 LINE:26 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:29 "C:\cvavr\inc\alcd.h"
+NODE:M LEVEL:0 LINE:30 "DAC_CS"
+NODE:M LEVEL:0 LINE:31 "LDAC"
+NODE:V LEVEL:0 LINE:34 "MCP4921_Command -> R5"
+NODE:V LEVEL:0 LINE:35 "data -> R6,R7"
+NODE:V LEVEL:0 LINE:36 "text -> RAM:????"
+NODE:I LEVEL:0 LINE:39 "C:\cvavr\inc\spi.h"
+NODE:F LEVEL:0 LINE:41 "send2dacMCP4921(unsigned int data)"
+NODE:F LEVEL:0 LINE:63 "main(void)"

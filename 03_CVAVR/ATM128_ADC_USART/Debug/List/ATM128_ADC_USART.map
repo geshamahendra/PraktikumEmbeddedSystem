@@ -1,0 +1,64 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Tegangan                                                                          0x0500       4
+text                                                                              0x0504      16
+_base_y                                                                           0x0514       4
+_lcd_x                                                                            0x0518       1
+_lcd_y                                                                            0x0519       1
+_lcd_maxx                                                                         0x051A       1
+_seed                                                                             0x051B       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+no_sensor                                                                         R5           1
+iterasi_timer                                                                     R4           1
+jumlah_data                                                                       R6,R7        2
+i                                                                                 R8,R9        2
+adc_data                                                                          R10,R11      2
+sampling_time                                                                     R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+start_timer                                                                       0x000EB      6
+stop_timer                                                                        0x000F1      3
+timer1_compa_isr                                                                  0x000F4     52
+read_adc                                                                          0x00128     14
+main                                                                              0x00136    283
+getchar                                                                           0x00251      4
+putchar                                                                           0x00255      7
+putsf                                                                             0x0025C     13
+put_usart_G100                                                                    0x00269     10
+put_buff_G100                                                                     0x00273     57
+_ftoe_G100                                                                        0x002AC    210
+_print_G100                                                                       0x0037E    536
+sprintf                                                                           0x00596     46
+printf                                                                            0x005C4     31
+get_usart_G100                                                                    0x005E3     22
+_scanf_G100                                                                       0x005F9    328
+scanf                                                                             0x00741     29
+sleep_enable                                                                      0x0075E      4
+idle                                                                              0x00762      8
+_lcd_write_nibble_G102                                                            0x0076A     20
+_lcd_write_data                                                                   0x0077E     12
+lcd_gotoxy                                                                        0x0078A     17
+lcd_clear                                                                         0x0079B     14
+lcd_putchar                                                                       0x007A9     32
+lcd_puts                                                                          0x007C9     15
+lcd_putsf                                                                         0x007D8     12
+lcd_init                                                                          0x007E4     47
+isdigit                                                                           0x00813      9
+isspace                                                                           0x0081C     11
+isxdigit                                                                          0x00827     15
+strcpyf                                                                           0x00836     13
+strlen                                                                            0x00843     12
+strlenf                                                                           0x0084F     13
+ftrunc                                                                            0x0085C     49
+floor                                                                             0x0088D     23
+ftoa                                                                              0x008A4    161

@@ -1,0 +1,139 @@
+/*******************************************************
+This program was created by the
+CodeWizardAVR V3.12 Advanced
+Automatic Program Generator
+� Copyright 1998-2014 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+Project : 
+Version : 
+Date    : 11/2/2021
+Author  : 
+Company : 
+Comments: 
+
+
+Chip type               : ATmega128
+Program type            : Application
+AVR Core Clock frequency: 10.000000 MHz
+Memory model            : Small
+External RAM size       : 0
+Data Stack size         : 1024
+*******************************************************/
+
+#include <mega128.h>
+#include <delay.h>
+#include <math.h>
+
+// Declare your global variables here
+int pilihan1, pilihan2;
+
+// Standard Input/Output functions
+#include <stdio.h>
+
+void main(void)
+{
+// Declare your local variables here
+
+// Input/Output Ports initialization
+// Port B initialization
+// Function: Bit7=Out Bit6=Out Bit5=Out Bit4=Out Bit3=Out Bit2=Out Bit1=Out Bit0=Out 
+DDRB=(1<<DDB7) | (1<<DDB6) | (1<<DDB5) | (1<<DDB4) | (1<<DDB3) | (1<<DDB2) | (1<<DDB1) | (1<<DDB0);
+// State: Bit7=0 Bit6=0 Bit5=0 Bit4=0 Bit3=0 Bit2=0 Bit1=0 Bit0=0 
+PORTB=(0<<PORTB7) | (0<<PORTB6) | (0<<PORTB5) | (0<<PORTB4) | (0<<PORTB3) | (0<<PORTB2) | (0<<PORTB1) | (0<<PORTB0);
+
+// USART0 initialization
+// Communication Parameters: 8 Data, 1 Stop, No Parity
+// USART0 Receiver: On
+// USART0 Transmitter: On
+// USART0 Mode: Asynchronous
+// USART0 Baud Rate: 9600
+UCSR0A=(0<<RXC0) | (0<<TXC0) | (0<<UDRE0) | (0<<FE0) | (0<<DOR0) | (0<<UPE0) | (0<<U2X0) | (0<<MPCM0);
+UCSR0B=(0<<RXCIE0) | (0<<TXCIE0) | (0<<UDRIE0) | (1<<RXEN0) | (1<<TXEN0) | (0<<UCSZ02) | (0<<RXB80) | (0<<TXB80);
+UCSR0C=(0<<UMSEL0) | (0<<UPM01) | (0<<UPM00) | (0<<USBS0) | (1<<UCSZ01) | (1<<UCSZ00) | (0<<UCPOL0);
+UBRR0H=0x00;
+UBRR0L=0x40;
+
+// USART1 initialization
+// USART1 disabled
+UCSR1B=(0<<RXCIE1) | (0<<TXCIE1) | (0<<UDRIE1) | (0<<RXEN1) | (0<<TXEN1) | (0<<UCSZ12) | (0<<RXB81) | (0<<TXB81);
+
+// Analog Comparator initialization
+// Analog Comparator: Off
+// The Analog Comparator's positive input is
+// connected to the AIN0 pin
+// The Analog Comparator's negative input is
+// connected to the AIN1 pin
+ACSR=(1<<ACD) | (0<<ACBG) | (0<<ACO) | (0<<ACI) | (0<<ACIE) | (0<<ACIC) | (0<<ACIS1) | (0<<ACIS0);
+SFIOR=(0<<ACME);
+
+while (1)
+      {
+      PORTB = 0b00000000;
+      printf(" Tekan 1 untuk menyalakan LED0 \r Tekan 2 untuk menyalakan LED1 \r Tekan 3 untuk menyalakan LED3 \r Tekan 4 untuk memilih mode transisi LED \r Masukkan pilihan LED: \r");
+      scanf("%d", &pilihan1);
+      delay_ms(500);
+      if (pilihan1 == 1){
+        PORTB = 0b00000001;
+        printf(" LED 0 nyala \r");
+        delay_ms(500);}
+      else if (pilihan1 == 2){
+        PORTB = 0b00000010;
+        printf(" LED 1 nyala \r");
+        delay_ms(500);}
+      else if (pilihan1 == 3){
+        PORTB = 0b00000100;
+        printf(" LED 2 nyala \r");
+        delay_ms(500);}
+      else if (pilihan1 == 4){
+        printf(" Tekan 1 untuk transisi LED dari 0 ke 7 \r");
+        delay_ms(500);
+        printf(" Tekan 2 untuk transisi LED dari 7 ke 0 \r");
+        delay_ms(500);
+        scanf("%d", &pilihan2);
+        if (pilihan2 == 1){
+            printf(" Transisi LED dari 0 ke 7\r");
+            PORTB = 0b00000001;
+            delay_ms(100);
+            PORTB = 0b00000010;
+            delay_ms(100);
+            PORTB = 0b00000100;
+            delay_ms(100);
+            PORTB = 0b00001000;
+            delay_ms(100);
+            PORTB = 0b00010000;
+            delay_ms(100);
+            PORTB = 0b00100000;
+            delay_ms(100);
+            PORTB = 0b01000000;
+            delay_ms(100);
+            PORTB = 0b10000000;
+            delay_ms(100);}
+        else if (pilihan2 == 2){
+            printf(" Transisi LED dari 7 ke 0\r");
+            PORTB = 0b10000000;
+            delay_ms(100);
+            PORTB = 0b01000000;
+            delay_ms(100);
+            PORTB = 0b00100000;
+            delay_ms(100);
+            PORTB = 0b00010000;
+            delay_ms(100);
+            PORTB = 0b00001000;
+            delay_ms(100);
+            PORTB = 0b00000100;
+            delay_ms(100);
+            PORTB = 0b00000010;
+            delay_ms(100);
+            PORTB = 0b00000001;
+            delay_ms(100);}
+        else {
+            printf(" Galat perangkat, input yang anda masukkan salah \r");
+            delay_ms(500);}
+        }
+      else{
+        printf(" Galat perangkat, input yang anda masukkan salah \r");
+        delay_ms(500);}
+      printf("\r");  
+      }
+}

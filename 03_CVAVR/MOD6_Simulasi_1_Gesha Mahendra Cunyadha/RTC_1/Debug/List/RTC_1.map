@@ -1,0 +1,63 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rtc_status                                                                        0x0557       1
+line1                                                                             0x0558      16
+line2                                                                             0x0568      16
+bulantext                                                                         0x0578      24
+_seed                                                                             0x0590       4
+_base_y                                                                           0x0594       4
+_lcd_maxx                                                                         0x0598       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+hdetik                                                                            R5           1
+detik                                                                             R4           1
+menit                                                                             R7           1
+jam                                                                               R6           1
+hari                                                                              R9           1
+bulan                                                                             R8           1
+tahun                                                                             R10,R11      2
+rtc_alarm                                                                         R2.0      1bit
+_lcd_x                                                                            R13          1
+_lcd_y                                                                            R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x000FC    139
+put_buff_G100                                                                     0x00187     63
+_print_G100                                                                       0x001C6    308
+sprintf                                                                           0x002FA     52
+rtc_read                                                                          0x0032E     29
+rtc_write                                                                         0x0034B     18
+rtc_get_status                                                                    0x0035D     11
+rtc_init                                                                          0x00368     36
+rtc_stop                                                                          0x0038C      6
+rtc_start                                                                         0x00392      6
+rtc_hold_off                                                                      0x00398      6
+rtc_hold_on                                                                       0x0039E      6
+rtc_read_bcd                                                                      0x003A4      9
+rtc_write_bcd                                                                     0x003AD     11
+rtc_write_word                                                                    0x003B8     19
+rtc_write_date                                                                    0x003CB     20
+rtc_get_time                                                                      0x003DF     36
+rtc_set_time                                                                      0x00403     24
+rtc_get_date                                                                      0x0041B     69
+rtc_set_date                                                                      0x00460     30
+_lcd_write_nibble_G103                                                            0x0047E     20
+_lcd_write_data                                                                   0x00492     12
+lcd_gotoxy                                                                        0x0049E     13
+lcd_clear                                                                         0x004AB     12
+lcd_putchar                                                                       0x004B7     23
+lcd_puts                                                                          0x004CE     17
+lcd_init                                                                          0x004DF     47
+strlen                                                                            0x0050E     12
+strlenf                                                                           0x0051A     13
+bcd2bin                                                                           0x00527     13
+bin2bcd                                                                           0x00534     10

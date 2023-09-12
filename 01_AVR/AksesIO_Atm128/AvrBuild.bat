@@ -1,0 +1,2 @@
+@ECHO OFF
+"C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "C:\Users\gesha\Documents\AVR\AksesIO_Atm128\labels.tmp" -fI -W+ie -C V2E -o "C:\Users\gesha\Documents\AVR\AksesIO_Atm128\AksesIO_Atm128.hex" -d "C:\Users\gesha\Documents\AVR\AksesIO_Atm128\AksesIO_Atm128.obj" -e "C:\Users\gesha\Documents\AVR\AksesIO_Atm128\AksesIO_Atm128.eep" -m "C:\Users\gesha\Documents\AVR\AksesIO_Atm128\AksesIO_Atm128.map" "C:\Users\gesha\Documents\AVR\AksesIO_Atm128\AksesIO_Atm128.asm"

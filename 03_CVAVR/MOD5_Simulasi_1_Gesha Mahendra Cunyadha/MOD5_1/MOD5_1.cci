@@ -1,0 +1,10 @@
+VERSION:3 SOURCE_TIMESTAMP:536272ED
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega128.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\delay.h"
+NODE:V LEVEL:0 LINE:28 "nama_depan -> RAM:????"
+NODE:V LEVEL:0 LINE:29 "nama_belakang -> RAM:????"
+NODE:V LEVEL:0 LINE:30 "kelompok -> RAM:????"
+NODE:V LEVEL:0 LINE:31 "ipk -> RAM:????"
+NODE:V LEVEL:0 LINE:32 "email -> RAM:????"
+NODE:I LEVEL:0 LINE:35 "C:\cvavr\inc\stdio.h"
+NODE:F LEVEL:0 LINE:37 "main(void)"

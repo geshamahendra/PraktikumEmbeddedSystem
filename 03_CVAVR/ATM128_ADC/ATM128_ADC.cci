@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:537AA1A2
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega128.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\stdio.h"
+NODE:I LEVEL:0 LINE:26 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:29 "C:\cvavr\inc\alcd.h"
+NODE:V LEVEL:0 LINE:32 "no_sensor -> R5"
+NODE:V LEVEL:0 LINE:33 "adc_data -> R6,R7"
+NODE:V LEVEL:0 LINE:34 "Tegangan -> RAM:????"
+NODE:V LEVEL:0 LINE:35 "text -> RAM:????"
+NODE:M LEVEL:0 LINE:38 "ADC_VREF_TYPE"
+NODE:F LEVEL:0 LINE:41 "read_adc(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:54 "main(void)"

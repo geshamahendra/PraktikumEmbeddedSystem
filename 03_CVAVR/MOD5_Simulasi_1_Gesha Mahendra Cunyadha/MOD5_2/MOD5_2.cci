@@ -1,0 +1,8 @@
+VERSION:3 SOURCE_TIMESTAMP:5362A72F
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega128.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:26 "C:\cvavr\inc\math.h"
+NODE:V LEVEL:0 LINE:29 "pilihan1 -> R4,R5"
+NODE:V LEVEL:0 LINE:29 "pilihan2 -> R6,R7"
+NODE:I LEVEL:0 LINE:32 "C:\cvavr\inc\stdio.h"
+NODE:F LEVEL:0 LINE:34 "main(void)"

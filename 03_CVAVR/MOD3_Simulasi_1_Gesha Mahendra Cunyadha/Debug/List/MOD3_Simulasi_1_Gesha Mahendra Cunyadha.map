@@ -1,0 +1,196 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+prima                                                                             0x0500       2
+led                                                                               0x0502       2
+textbuff                                                                          0x0504      16
+nama                                                                              0x0514      16
+_base_y                                                                           0x0524       4
+_lcd_x                                                                            0x0528       1
+_lcd_y                                                                            0x0529       1
+_lcd_maxx                                                                         0x052A       1
+_seed                                                                             0x052B       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R4,R5        2
+j                                                                                 R6,R7        2
+k                                                                                 R8,R9        2
+counter                                                                           R10,R11      2
+counter1                                                                          R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000AC    115
+timer1_compa_isr                                                                  0x0011F     36
+main                                                                              0x00143    150
+_lcd_write_nibble_G100                                                            0x001D9     20
+_lcd_write_data                                                                   0x001ED     12
+lcd_gotoxy                                                                        0x001F9     17
+lcd_clear                                                                         0x0020A     14
+lcd_putchar                                                                       0x00218     32
+lcd_puts                                                                          0x00238     17
+lcd_init                                                                          0x00249     47
+put_buff_G101                                                                     0x00278     64
+_print_G101                                                                       0x002B8    308
+sprintf                                                                           0x003EC     52
+strlen                                                                            0x00420     12
+strlenf                                                                           0x0042C     13

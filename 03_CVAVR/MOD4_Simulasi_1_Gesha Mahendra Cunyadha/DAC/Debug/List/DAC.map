@@ -1,0 +1,69 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+textbuff1                                                                         0x0500      16
+textbuff2                                                                         0x0510      16
+avalue                                                                            0x0520       4
+_base_y                                                                           0x0524       4
+_seed                                                                             0x0528       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+data                                                                              R5           1
+data_adc                                                                          R6,R7        2
+_lcd_x                                                                            R4           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DAC                                                                          0x00093     11
+read_adc                                                                          0x0009E     15
+main                                                                              0x000AD    119
+put_buff_G100                                                                     0x00124     58
+_ftoe_G100                                                                        0x0015E    210
+_print_G100                                                                       0x00230    538
+sprintf                                                                           0x0044A     52
+_lcd_write_nibble_G101                                                            0x0047E     20
+_lcd_write_data                                                                   0x00492     12
+lcd_gotoxy                                                                        0x0049E     13
+lcd_clear                                                                         0x004AB     12
+lcd_putchar                                                                       0x004B7     21
+lcd_puts                                                                          0x004CC     17
+lcd_init                                                                          0x004DD     46
+strcpyf                                                                           0x0050B     13
+strlen                                                                            0x00518     12
+strlenf                                                                           0x00524     13
+ftrunc                                                                            0x00531     49
+floor                                                                             0x00562     23
+ftoa                                                                              0x00579    161
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+send2DAC                                                                          0x00093     11
+read_adc                                                                          0x0009E     15
+main                                                                              0x000AD    119
+put_buff_G100                                                                     0x00124     58
+_ftoe_G100                                                                        0x0015E    210
+_print_G100                                                                       0x00230    538
+sprintf                                                                           0x0044A     52
+_lcd_write_nibble_G101                                                            0x0047E     20
+_lcd_write_data                                                                   0x00492     12
+lcd_gotoxy                                                                        0x0049E     13
+lcd_clear                                                                         0x004AB     12
+lcd_putchar                                                                       0x004B7     21
+lcd_puts                                                                          0x004CC     17
+lcd_init                                                                          0x004DD     46
+strcpyf                                                                           0x0050B     13
+strlen                                                                            0x00518     12
+strlenf                                                                           0x00524     13
+ftrunc                                                                            0x00531     49
+floor                                                                             0x00562     23
+ftoa                                                                              0x00579    161

@@ -1,0 +1,34 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+nama_depan                                                                        0x0500     255
+nama_belakang                                                                     0x05FF     255
+kelompok                                                                          0x06FE     255
+ipk                                                                               0x07FD     255
+email                                                                             0x08FC     255
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+main                                                                              0x000EC    118
+getchar                                                                           0x00162      4
+putchar                                                                           0x00166      7
+put_usart_G100                                                                    0x0016D     13
+_print_G100                                                                       0x0017A    308
+printf                                                                            0x002AE     31
+get_usart_G100                                                                    0x002CD     22
+_scanf_G100                                                                       0x002E3    322
+scanf                                                                             0x00425     29
+isdigit                                                                           0x00442      9
+isspace                                                                           0x0044B     11
+isxdigit                                                                          0x00456     15
+strlen                                                                            0x00465     12
+strlenf                                                                           0x00471     13

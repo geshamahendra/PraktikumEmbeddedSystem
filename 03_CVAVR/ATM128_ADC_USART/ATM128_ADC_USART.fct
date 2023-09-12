@@ -1,0 +1,12 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"ATM128_ADC_USART.c" LINE:87
+sprintf DSTACK_USAGE:14 DSTACK_LEVEL:14 FILE:"C:\cvavr\lib\stdio.lib" LINE:1462
+_print DSTACK_USAGE:94 DSTACK_LEVEL:108 FILE:"C:\cvavr\lib\stdio.lib" LINE:1209
+_ftoe DSTACK_USAGE:16 DSTACK_LEVEL:124 FILE:"C:\cvavr\lib\stdio.lib" LINE:1128
+floor DSTACK_USAGE:4 DSTACK_LEVEL:128 FILE:"C:\cvavr\lib\math.lib" LINE:659
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:132 FILE:"C:\cvavr\lib\math.lib" LINE:544
+timer1_compa_isr DSTACK_USAGE:12 DSTACK_LEVEL:144 FILE:"ATM128_ADC_USART.c" LINE:54
+lcd_putsf DSTACK_USAGE:3 DSTACK_LEVEL:147 FILE:"C:\cvavr\lib\alcd.lib" LINE:286
+lcd_putchar DSTACK_USAGE:1 DSTACK_LEVEL:148 FILE:"C:\cvavr\lib\alcd.lib" LINE:265
+lcd_gotoxy DSTACK_USAGE:2 DSTACK_LEVEL:150 FILE:"C:\cvavr\lib\alcd.lib" LINE:247
+_lcd_write_data DSTACK_USAGE:1 DSTACK_LEVEL:151 FILE:"C:\cvavr\lib\alcd.lib" LINE:161
+_lcd_write_nibble DSTACK_USAGE:1 DSTACK_LEVEL:152 FILE:"C:\cvavr\lib\alcd.lib" LINE:139

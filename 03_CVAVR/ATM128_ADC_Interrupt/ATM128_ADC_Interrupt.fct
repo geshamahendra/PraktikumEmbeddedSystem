@@ -1,0 +1,10 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"ATM128_ADC_Interrupt.c" LINE:67
+lcd_init DSTACK_USAGE:1 DSTACK_LEVEL:1 FILE:"C:\cvavr\lib\alcd.lib" LINE:300
+_lcd_write_data DSTACK_USAGE:1 DSTACK_LEVEL:2 FILE:"C:\cvavr\lib\alcd.lib" LINE:161
+_lcd_write_nibble DSTACK_USAGE:1 DSTACK_LEVEL:3 FILE:"C:\cvavr\lib\alcd.lib" LINE:139
+adc_isr DSTACK_USAGE:12 DSTACK_LEVEL:15 FILE:"ATM128_ADC_Interrupt.c" LINE:43
+sprintf DSTACK_USAGE:14 DSTACK_LEVEL:29 FILE:"C:\cvavr\lib\stdio.lib" LINE:1462
+_print DSTACK_USAGE:94 DSTACK_LEVEL:123 FILE:"C:\cvavr\lib\stdio.lib" LINE:1209
+_ftoe DSTACK_USAGE:16 DSTACK_LEVEL:139 FILE:"C:\cvavr\lib\stdio.lib" LINE:1128
+floor DSTACK_USAGE:4 DSTACK_LEVEL:143 FILE:"C:\cvavr\lib\math.lib" LINE:659
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:147 FILE:"C:\cvavr\lib\math.lib" LINE:544
